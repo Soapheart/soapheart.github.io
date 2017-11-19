@@ -1,0 +1,88 @@
+body{
+    background-color: azure;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+    height: 7em;
+}
+h1, h2{
+    text-align: center;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+}
+.call{
+    
+}
+i.fa {
+  width: 100px;
+  height: 100px;
+  background-color: #41ab6b;
+  color: white;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+}
+.rev{
+    border-radius: 10px;
+    margin: 0.3em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.revText{
+  margin: 5px;  
+}
+.top{
+    color: white;
+    background: url(http://ivlan.ru/wp-content/uploads/2017/05/svet_sklad.jpg) center center no-repeat;
+    background-size: cover;
+    height: 670px;
+}
+.revPhoto{
+    margin: 5px;
+    float: left;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.item{
+    background-color: #446CB3;
+    margin:5px;
+    height: 200px;
+}
+.advantages{
+    padding: 20px;
+    color: #aaa;
+    height: auto;
+}
+.reviews{
+    background-image: url(https://image.freepik.com/free-vector/vector-background-abstract-polygon-triangles_2065-346.jpg);
+    background-color: #bdc3c7;
+    padding: 20px;
+    height: auto;
+}
+.offer
+{
+    color: #aaa;
+    padding: 20px;
+    height: auto;
+}
+.clients{
+    padding: 20px;
+    color: #ecf0f1;
+    background-color: #3498db;
+    height: auto;
+}
+.contacts{
+    padding: 20px;
+    color: #ecf0f1;
+    background-color: #bdc3c7;
+    height: auto;
+}
