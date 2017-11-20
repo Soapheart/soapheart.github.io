@@ -42,6 +42,7 @@ i.fa {
 .top{
     color: white;
     background: url(http://ivlan.ru/wp-content/uploads/2017/05/svet_sklad.jpg) center center no-repeat;
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     background-size: cover;
     height: 670px;
