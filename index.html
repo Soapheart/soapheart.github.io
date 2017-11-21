@@ -3,97 +3,118 @@
     <head>
         <meta charset="utf-8">
         <title>Specaliance</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/topMenu.css">
+        <link rel="stylesheet" type="text/css" href="css/reviews.css">
+        <link rel="stylesheet" type="text/css" href="css/scroll.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="js/ancors.js"></script>
+        <script src="js/smoothScroll.js"></script>
+        <script src="js/reviews.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- /fonts -->
     </head>
+    <header>
+        <div class="container-fluid topMenu">
+            <div class="container">
+                <nav>
+                  <ul id="top-menu">
+                     <li><a href="#f01">Преимущества</a></li><!--
+                  --><li><a href="#f02">Мы предлагаем</a></li><!--
+                  --><li><a href="#f03">Наши бренды</a></li><!--
+                  --><li><a href="#f04">Контакты</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <body>
-        <div class="top container">
+        <div class="top container-fluid">
                <div class="row">
-                 <div class="col-9"></div>
+                 <div class="col-3"></div>
+                   <div class="col-6">
+                    <img class="logo" src="http://images.mirstroek.ru/images/users_logos/big/14686.jpeg">
+                   </div>
                   <div class="col-3 phone">
-                       <p>tel. 8 (918) xxx-xx-xx</p>
-                       <p>specaliace@yandex.ru</p>
+                      <p><b>tel. 8 (918) xxx-xx-xx</b></p>
+                      <p><b>specaliace@yandex.ru</b></p>
+                    <div class="button"><button class="btn btn-warning">Заказать звонок</button></div>
                    </div>
                </div>
-                <img class="logo" src="http://images.mirstroek.ru/images/users_logos/big/14686.jpeg">
-                <h1>Спецальянс</h1>
-                <p class="center">комплексное обеспечение строительных объектов</p>
-                <div class="center"><button class="btn btn-warning">Заказать звонок</button></div>
+                <h1 class="fontHeader">СПЕЦАЛЬЯНС</h1>
+            <p class="center fontHeader">Торговля и производство</p>
+            <p class="center fontLabel">Снабжение строительных и производственных объектов расходными материалами</p>
+            <!--scroll-->
+                <div class="scroll-downs">
+                  <div class="mousey">
+                    <div class="scroller"></div>
+                  </div>
+            <!--/scroll-->
+</div>
         </div>
-        <div class="advantages container">
-            <h2>Наши преимущества</h2>
-            <div class="row">
-                <div class="col-3 adv1">
-                  <div class="center">
-                    <i class="fa fa-home fa-3x" aria-hidden="true"></i>
-                    <p>Склад в г.Краснодар</p>
+        <div class="container-fluid advantages" id="f01">
+                <h2>Наши преимущества</h2>
+                <div class="row">
+                  <div class="col adv1" id="adv1">
+                      <div class="center">
+                        <i class="fa fa-home fa-5x" aria-hidden="true"></i>
+                        <p>Производство и склад в г.Краснодар</p>
+                      </div>
+                  </div>
+                  <div class="col adv2" id="adv2">
+                    <div class="center">
+                           <i class="fa fa-truck fa-5x" aria-hidden="true"></i>
+                           <p>Бесплатная доставка</p>
+                    </div>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col adv2" id="adv3">
+                          <div class="center">
+                              <i class="fa fa-money fa-5x" aria-hidden="true"></i>
+                              <p>Конкурентные цены</p>
+                          </div>
+                      </div>
+                  <div class="col adv1" id="adv4">
+                      <div class="center">
+                          <i class="fa fa-briefcase fa-5x" aria-hidden="true"></i>
+                          <p>Комплексное закрытие заявок</p>
+                      </div>
                   </div>
                 </div>
-                <div class="col-3 adv2 ">
-                  <div class="center">
-                       <i class="fa fa-truck fa-3x" aria-hidden="true"></i>
-                       <p>Бесплатная доставка</p>
-                  </div>
+
+        </div>    
+        <div class="review container-fluid">
+            <div class="button center">
+                <button class="btn btn-warning">Сделать заявку</button>
+            </div>
+        </div>
+        <div class="container-fluid offer">
+            <div class="container" id="f02">
+                <h2>Мы предлагаем</h2>
+                <div class="row">
+                    <div class="col item"></div>
+                    <div class="col item"></div>
+                    <div class="col item"></div>
                 </div>
-                <div class="col-3 adv3">
-                  <div class="center">
-                       <i class="fa fa-money fa-3x" aria-hidden="true"></i>
-                       <p>Конкурентные цены</p>
-                  </div>
-                </div>
-                <div class="col-3 adv4">
-                   <div class="center">
-                       <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
-                       <p>Отсрочка платежа</p>
-                   </div>
+                <div class="row">
+                    <div class="col item"></div>
+                    <div class="col item"></div>
+                    <div class="col item"></div>
                 </div>
             </div>
         </div>
-        <div class="reviews container-fluid">
-           <div class="container">
-            <h2>Отзывы</h2>
-            <div class="row">
-                <div class="col rev">
-                   <div class="row">
-                    <p class="revText"><img class="revPhoto" src="https://wikiwings.ru/articles/pictures/img_541.jpg">
-                    Таким образом новая модель организационной деятельности влечет за собой процесс внедрения и модернизации новых предложений. Равным образом постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации.</p>
-                    </div>
-                </div>
-                <div class="col rev">
-                   <div class="row">
-                    <p class="revText"><img class="revPhoto" src="https://www.washingtonpost.com/graphics/2017/politics/australia-mexico-transcripts/img/trump.jpg">
-                    Равным образом укрепление и развитие структуры требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
-                    </div>
-                </div>
-                <div class="col rev">
-                   <div class="row">
-                    <p class="revText"><img class="revPhoto" src="https://pp.userapi.com/c636725/v636725339/59a3a/oXuvQD6Bx4Y.jpg">
-                    Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание форм развития. Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет выполнять важные задания по разработке дальнейших направлений развития.</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="offer container">
-            <h2>Мы предлагаем</h2>
-            <div class="row">
-                <div class="col item"></div>
-                <div class="col item"></div>
-                <div class="col item"></div>
-            </div>
-            <div class="row">
-                <div class="col item"></div>
-                <div class="col item"></div>
-                <div class="col item"></div>
-            </div>
-        </div>
-        <div class="clients container-fluid">
-            <h2>Наши клиенты</h2>
+        <div class="clients container-fluid" id="f03">
+            <h2>Наши бренды</h2>
             <div class="clientsBlock container">
                 <div class="row">
                     <div class="col item"></div>
@@ -107,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="contacts container-fluid">
+        <div class="contacts container-fluid" id="f04">
                <div class="container">
                     <h2>Контакты</h2>
                     <p>г.Краснодар, пос.Колосистый, пер.Звёздный, 1/1 <br>
@@ -116,7 +137,7 @@
                     specaliace@yandex.ru
                     </p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.1127991456515!2d38.90601107975123!3d45.1265914484607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f0470a913ac61f%3A0x7461f5af854b9b06!2z0L_QtdGALiDQl9Cy0LXQt9C00L3Ri9C5LCAxLCDQmtC-0LvQvtGB0LjRgdGC0YvQuSwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1MDA1Mw!5e0!3m2!1sru!2sru!4v1511088198384" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    <p>Created by <a href="https://vk.com/soapheart">Soapheart</a>, 2017</p>
+                    <p>Дизайн и разработка - <a href="https://vk.com/soapheart">Soapheart</a>, 2017</p>
                 </div>
         </div>
     </body>
