@@ -21,6 +21,7 @@ h1, h2{
 }
 .fontHeader, h2{
     font-family: 'Roboto Slab', serif;
+    margin-bottom: 20px;
 }
 .fontLabel{
     font-family: 'Montserrat', sans-serif;
@@ -45,33 +46,37 @@ h1, h2{
     padding: 40px;
     height: 235px;
     background-color: #e6e4e3;
+    transition: transform 0.5s ease;
 }
 .adv2{
     padding: 40px;
     height: 235px;
     background-color: #f2f1f0;
+    transition: transform 0.5s ease;
 }
 #adv1:hover{
     z-index: 1;
+    transform: scale(1.02);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #adv2:hover{
     z-index: 1;
+    transform: scale(1.02);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #adv3:hover{
     z-index: 1;
+    transform: scale(1.02);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #adv4:hover{
     z-index: 1;
+    transform: scale(1.02);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* разобраться */
 
 i.fa {
-  width: 100px;
-  height: 100px;
   padding: 0.5em 0.5em;
   color: #82533b;
 }
@@ -107,10 +112,10 @@ i.fa:hover{
     height: 200px;
 }
 .advantages{
-    background-color:white;
+    background-color: #f9f4ef;
     padding: 30px;
     color: #7f8c8d;
-    height: 624px;
+    height: auto;
 }
 .review{
     color: #7f8c8d;
