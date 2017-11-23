@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/scroll.css">
         <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
         <link rel="stylesheet" type="text/css" href="css/slide.css">
+        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -20,6 +21,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
         <script src="js/fm.revealator.jquery.min.js"></script>
+        <script src="js/modal.js"></script>
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
@@ -50,12 +52,12 @@
                   <div class="col-3 phone">
                       <p><b>tel. 8 (918) xxx-xx-xx</b></p>
                       <p><b>specaliace@yandex.ru</b></p>
-                    <div class="button"><button class="btn btn-warning">Заказать звонок</button></div>
+                    <div class="button"><button class="btn btn-warning" data-toggle="modal" data-target="#triggerOrder">Заказать звонок</button></div>
                    </div>
                </div>
                 <h1 class="fontHeader">СПЕЦАЛЬЯНС</h1>
             <p class="center fontHeader">Торговля и производство</p>
-            <p class="center fontLabel">Снабжение строительных и производственных объектов расходными материалами</p>
+            <p class="center fontLabel">Снабжение строительных и производственных объектов</p>
             <!--scroll-->
                 <div class="scroll-downs">
                   <div class="mousey">
@@ -65,7 +67,8 @@
 </div>
         </div>
         <div class="container-fluid advantages" id="f01">
-                <h2 class="revealator-slideleft revealator-delay5">Наши преимущества</h2>
+                <h2 class="revealator-slideright revealator-delay5">Наши преимущества</h2>
+            <div class="container">
                 <div class="row">
                   <div class="col adv1 revealator-slideright revealator-delay1" id="adv1">
                       <div class="center">
@@ -73,31 +76,32 @@
                           <p><b>Производство и склад в г.Краснодар</b></p>
                       </div>
                   </div>
-                  <div class="col adv2 revealator-slideleft revealator-delay1" id="adv2">
+                  <div class="col adv2 revealator-slideright revealator-delay2" id="adv2">
                     <div class="center">
-                           <i class="fa fa-truck fa-5x" aria-hidden="true"></i>
-                        <p><b>Бесплатная доставка</b></p>
+                        <img class="gaz" src="img/car.png">
+                        <p><b>Бесплатная доставка</b><br>
+                        при заказе от 10,000 руб.</p>
                     </div>
                   </div>
                   <div class="w-100"></div>
-                  <div class="col adv2 revealator-slideright revealator-delay1" id="adv3">
+                  <div class="col adv2 revealator-slideright revealator-delay3" id="adv3">
                           <div class="center">
-                              <i class="fa fa-money fa-5x" aria-hidden="true"></i>
+                              <img class="icons" src="img/wallet.png">
                               <p><b>Конкурентные цены</b></p>
                           </div>
                       </div>
-                  <div class="col adv1 revealator-slideleft revealator-delay1" id="adv4">
+                  <div class="col adv1 revealator-slideright revealator-delay4" id="adv4">
                       <div class="center">
-                          <i class="fa fa-briefcase fa-5x" aria-hidden="true"></i>
+                          <img class="icons" src="img/doc.png">
                           <p><b>Комплексное закрытие заявок</b></p>
                       </div>
                   </div>
                 </div>
-
+            </div>
         </div>    
         <div class="container-fluid offer">
             <div class="container" id="f02">
-                <h2 class="revealator-slideright revealator-delay5">Мы предлагаем</h2>
+                <h2 class="">Мы предлагаем</h2>
                 <div class="row">
                     <div class="col item"></div>
                     <div class="col item"></div>
@@ -110,13 +114,13 @@
                 </div>
             </div>
         </div>
-        <div class="request container-fluid revealator-slideup revealator-delay1">
+        <div class="request container-fluid">
             <div class="button center">
                 <button class="btn btn-warning">Сделать заявку</button>
             </div>
         </div>
         <div class="fiber container-fluid">
-            <h2 class="revealator-slideleft revealator-delay5">Стекловолокно</h2>
+            <h2 class="revealator-slideright revealator-delay5">Стекловолокно</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-4"><img class="img-fluid" src="img/fiber-glass-400.png"></div>
@@ -137,20 +141,20 @@
             <h2 class="revealator-slideright revealator-delay5">Наши бренды</h2>
             <div class="clientsBlock container">
                 <div class="row">
-                    <div class="img-fluid"><img class="brandLogo" src="img/logo1w.jpg"></div>
-                    <div class="img-fluid"><img class="brandLogo" src="img/logo2w.jpg"></div>
-                    <div class="img-fluid"><img class="brandLogo" src="img/logo3w.jpg"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor1" src="img/logo1w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor2" src="img/logo2w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor1" src="img/logo3w.png"></div>
                 </div>
                 <div class="row">
-                    <div class="img-fluid"><img class="brandLogo" src="img/logo4w.jpg"></div>
-                    <div class="img-fluid"><img class="brandLogo" src="img/logo5w.jpg"></div>
-                    <div class="img-fluid"><img class="brandLogo" src="img/logo6w.jpg"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor2" src="img/logo4w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor1" src="img/logo5w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor2" src="img/logo6w.png"></div>
                 </div>
             </div>
         </div>
         <div class="contacts container-fluid" id="f04">
                <div class="container">
-                    <h2 class="revealator-slideleft revealator-delay1">Контакты</h2>
+                    <h2 class="revealator-slideright revealator-delay1">Контакты</h2>
                     <p>г.Краснодар, пос.Колосистый, пер.Звёздный, 1/1 <br>
                     Тел. +7(918) xxx-xx-xx <br>
                     Тел. +7(918) xxx-xx-xx <br>
@@ -161,4 +165,24 @@
                 </div>
         </div>
     </body>
-    <footer></footer>
+    <footer>
+        <div class="modal fade" id="triggerOrder" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="myModalLabel">Заказать звонок</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="center modal-body">
+                <p>Пожалуйста заполните поля ниже, чтобы мы могли связатсья с Вами</p>
+                <input type="text" name="name" placeholder="Ваше имя" /><br />
+                <input  type="email" name="email" placeholder="Email" /><br />
+                <textarea type="text" name="message" placeholder="Комментарий"></textarea><br />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Отправить <i class="fa fa-paper-plane" style="color: white;" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>

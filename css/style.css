@@ -5,7 +5,7 @@ p, .button{
     font-family: 'Roboto', sans-serif;
 }
 a:hover{
-    color: #f39c12;
+    color: red;
     text-decoration: none;
 }
 .logo{
@@ -44,13 +44,13 @@ h1, h2{
 /* разобраться */
 .adv1{
     padding: 40px;
-    height: 235px;
+    height: 250px;
     background-color: #e6e4e3;
     transition: transform 0.5s ease;
 }
 .adv2{
     padding: 40px;
-    height: 235px;
+    height: 250px;
     background-color: #f2f1f0;
     transition: transform 0.5s ease;
 }
@@ -77,13 +77,68 @@ h1, h2{
 /* разобраться */
 
 i.fa {
-  padding: 0.5em 0.5em;
-  color: #82533b;
+  padding: 0.3em 0.3em;
+  color: #e67e22;
 }
 i.fa:hover{
-        color: #2c3e50;
+        color: #f1c40f;
         transition: 0.5s;
     }
+.top{
+    color: white;
+    background: url(../img/test.jpg) center center no-repeat;
+    background-size: cover;
+    height: 974px;
+}
+.item{
+    background-color: #446CB3;
+    margin:5px;
+    height: 200px;
+}
+.advantages{
+    background-color: #f9f4ef;
+    padding: 30px;
+    color: #7f8c8d;
+    height: auto;
+}
+.request{
+    color: #7f8c8d;
+    background-image: url(https://image.freepik.com/free-vector/vector-background-abstract-polygon-triangles_2065-346.jpg);
+    background-color: #bdc3c7;
+    padding: 20px;
+    height: auto;
+}
+.fiber{
+    height: auto;
+    margin: 40px 0px 40px 0px;
+}
+.fiberTextBox{
+    padding: 20px;
+    color: #7f8c8d;
+    background: #f2f1f0;
+}
+.offer
+{
+    background-color: #fff;
+    color: #7f8c8d;
+    padding: 40px 0px 40px 0px;
+    height: auto;
+}
+.clients{
+    padding: 40px 0px 40px 0px;
+    color: #7f8c8d;
+    background-color: #ecf0f1;
+    height: auto;
+}
+.contacts{
+    padding: 40px 0px 40px 0px;
+    color: #7f8c8d;
+    background-color: #fff;
+    height: auto;
+}
+
+/* brandLogo */
+
 .brandLogo{
     -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -104,54 +159,56 @@ i.fa:hover{
   filter: none;
   filter: none; /* IE 6-9 */
 }
-.top{
-    color: white;
-    background: url(../img/test.jpg) center center no-repeat;
-    background-size: cover;
-    height: 974px;
+
+.brandLogoColor1{ 
+    background-color: #e6e4e3;
 }
-.item{
-    background-color: #446CB3;
-    margin:5px;
-    height: 200px;
+.brandLogoColor2{ 
+    background-color: #f2f1f0;
 }
-.advantages{
-    background-color: #f9f4ef;
-    padding: 40px 0px 40px 0px;
-    color: #7f8c8d;
-    height: auto;
+/* /brandLogo */
+
+/* modal */
+input {
+  margin-bottom:10px;
 }
-.request{
-    color: #7f8c8d;
-    background-image: url(https://image.freepik.com/free-vector/vector-background-abstract-polygon-triangles_2065-346.jpg);
-    background-color: #bdc3c7;
-    padding: 20px;
-    height: auto;
+textarea {
+  height:100px;
+  margin-bottom:10px;
 }
-.fiber{
-    margin: 40px 0px 40px 0px;
-    color: #7f8c8d;
-}
-.fiberTextBox{
-    padding: 20px;
-    background: #f2f1f0;
-}
-.offer
+input:first-of-type
 {
-    background-color: #fff;
-    color: #7f8c8d;
-    padding: 40px 0px 40px 0px;
-    height: auto;
+  margin-top:35px;
 }
-.clients{
-    padding: 40px 0px 40px 0px;
-    color: #7f8c8d;
-    background-color: #ecf0f1;
-    height: auto;
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#FAFAFA;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
 }
-.contacts{
-    padding: 20px;
-    color: #7f8c8d;
-    background-color: #fff;
-    height: auto;
+::-webkit-input-placeholder {
+   color: #FAFAFA;
 }
+:-moz-placeholder {
+   color: #FAFAFA;  
+}
+::-moz-placeholder {
+   color: #FAFAFA; 
+}
+:-ms-input-placeholder {  
+   color: #FAFAFA;  
+}
+/* /modal */
