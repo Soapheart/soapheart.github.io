@@ -5,7 +5,7 @@ p, .button{
     font-family: 'Roboto', sans-serif;
 }
 a:hover{
-    color: red;
+    color: #f39c12;
     text-decoration: none;
 }
 .logo{
@@ -84,6 +84,26 @@ i.fa:hover{
         color: #2c3e50;
         transition: 0.5s;
     }
+.brandLogo{
+    -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.brandLogo:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
+}
 .top{
     color: white;
     background: url(../img/test.jpg) center center no-repeat;
@@ -97,7 +117,7 @@ i.fa:hover{
 }
 .advantages{
     background-color: #f9f4ef;
-    padding: 30px;
+    padding: 40px 0px 40px 0px;
     color: #7f8c8d;
     height: auto;
 }
@@ -109,23 +129,22 @@ i.fa:hover{
     height: auto;
 }
 .fiber{
-    height: 250px;
     margin: 40px 0px 40px 0px;
+    color: #7f8c8d;
 }
 .fiberTextBox{
     padding: 20px;
-    color: #7f8c8d;
     background: #f2f1f0;
 }
 .offer
 {
     background-color: #fff;
     color: #7f8c8d;
-    padding: 20px;
+    padding: 40px 0px 40px 0px;
     height: auto;
 }
 .clients{
-    padding: 20px;
+    padding: 40px 0px 40px 0px;
     color: #7f8c8d;
     background-color: #ecf0f1;
     height: auto;
