@@ -91,9 +91,18 @@ i.fa:hover{
     height: 974px;
 }
 .item{
-    background-color: #446CB3;
+    background-color: #f9f4ef;
     margin:5px;
-    height: 200px;
+    padding: 5px;
+    height: auto;
+    width: auto;
+}
+.itemImg{
+    background-color: white;
+}
+.itemDesc{
+    background-color: #e6e4e3;
+    padding: 5px;
 }
 .advantages{
     background-color: #f9f4ef;

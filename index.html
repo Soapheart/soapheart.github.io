@@ -11,8 +11,6 @@
         <link rel="stylesheet" type="text/css" href="css/reviews.css">
         <link rel="stylesheet" type="text/css" href="css/scroll.css">
         <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
-        <link rel="stylesheet" type="text/css" href="css/slide.css">
-        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -22,6 +20,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
         <script src="js/fm.revealator.jquery.min.js"></script>
         <script src="js/modal.js"></script>
+        <script src="js/mail.js"></script>
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
@@ -72,13 +71,13 @@
                 <div class="row">
                   <div class="col adv1 revealator-slideright revealator-delay1" id="adv1">
                       <div class="center">
-                        <i class="fa fa-home fa-5x" aria-hidden="true"></i>
+                        <img class="icons" src="img/storageW.png">
                           <p><b>Производство и склад в г.Краснодар</b></p>
                       </div>
                   </div>
                   <div class="col adv2 revealator-slideright revealator-delay2" id="adv2">
                     <div class="center">
-                        <img class="gaz" src="img/car.png">
+                        <img class="icons" src="img/carW.png">
                         <p><b>Бесплатная доставка</b><br>
                         при заказе от 10,000 руб.</p>
                     </div>
@@ -86,13 +85,13 @@
                   <div class="w-100"></div>
                   <div class="col adv2 revealator-slideright revealator-delay3" id="adv3">
                           <div class="center">
-                              <img class="icons" src="img/wallet.png">
+                              <img class="icons" src="img/walletW.png">
                               <p><b>Конкурентные цены</b></p>
                           </div>
                       </div>
                   <div class="col adv1 revealator-slideright revealator-delay4" id="adv4">
                       <div class="center">
-                          <img class="icons" src="img/doc.png">
+                          <img class="icons" src="img/docW.png">
                           <p><b>Комплексное закрытие заявок</b></p>
                       </div>
                   </div>
@@ -101,22 +100,22 @@
         </div>    
         <div class="container-fluid offer">
             <div class="container" id="f02">
-                <h2 class="">Мы предлагаем</h2>
+                <h2 class="revealator-slideright revealator-delay5">Мы предлагаем</h2>
                 <div class="row">
-                    <div class="col item"></div>
-                    <div class="col item"></div>
-                    <div class="col item"></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/electrodes.png"><div class="itemDesc"><h4>Электроды электродные</h4><p>Электроды, электроды, электроды.</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/fiber.png"><div class="itemDesc"><h4>Рулет стекловолоконный</h4><p>Широкий выбор стекловолокна, для разных целей применения.</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/instrument.png"><div class="itemDesc"><h4>Приборы столовые</h4><p>Надёжный помочник в любом деле.</p></div></div>
                 </div>
                 <div class="row">
-                    <div class="col item"></div>
-                    <div class="col item"></div>
-                    <div class="col item"></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/nails.png"><div class="itemDesc"><h4>Гвозди жаренные</h4><p>В ассортименте</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/wire.png"><div class="itemDesc"><h4>Металлические спагетти</h4><p>Для истинных ценителей итальянской кухни</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/discs.png"><div class="itemDesc"><h4>Баранки для резки</h4><p>Незабываемый продукт на чаепитии</p></div></div>
                 </div>
             </div>
         </div>
         <div class="request container-fluid">
             <div class="button center">
-                <button class="btn btn-warning">Сделать заявку</button>
+                <button class="btn btn-warning" data-toggle="modal" data-target="#triggerOrder">Сделать заявку</button>
             </div>
         </div>
         <div class="fiber container-fluid">
@@ -152,6 +151,11 @@
                 </div>
             </div>
         </div>
+        <div class="request container-fluid">
+            <div class="button center">
+                <button class="btn btn-warning" data-toggle="modal" data-target="#triggerOrder">Сделать заявку</button>
+            </div>
+        </div>
         <div class="contacts container-fluid" id="f04">
                <div class="container">
                     <h2 class="revealator-slideright revealator-delay1">Контакты</h2>
@@ -173,16 +177,19 @@
                 <h2 class="modal-title" id="myModalLabel">Заказать звонок</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
               </div>
-              <div class="center modal-body">
-                <p>Пожалуйста заполните поля ниже, чтобы мы могли связатсья с Вами</p>
-                <input type="text" name="name" placeholder="Ваше имя" /><br />
-                <input  type="email" name="email" placeholder="Email" /><br />
-                <textarea type="text" name="message" placeholder="Комментарий"></textarea><br />
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Отправить <i class="fa fa-paper-plane" style="color: white;" aria-hidden="true"></i></button>
+                <form action="" method="post" id="form">
+                  <div class="center modal-body">
+                    <p>Пожалуйста заполните поля ниже, чтобы мы могли связатсья с Вами</p>
+                    <input type="text" name="name" placeholder="Ваше имя" required="required" /><br/>
+                    <input  type="email" name="email" placeholder="Email" required="required" /><br/>
+                    <input type="phone" name="phone" placeholder="Телефон" /><br/>
+                    <textarea type="text" name="message" placeholder="Комментарий"></textarea><br/>
+                  </div>
+                  <div class="modal-footer">
+                      <input type="submit" class="btn btn-primary">
+                    </div>
+                </form>
               </div>
             </div>
           </div>
-        </div>
     </footer>
