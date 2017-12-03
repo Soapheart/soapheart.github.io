@@ -1,14 +1,13 @@
-<script type="text/javascript">
-$(document).ready(function(){
-    $("#form").submit(function() {
-            var form_data = $(this).serialize();
-            $.ajax({
-            type: "POST",
-            url: "../php/send.php",
-            data: form_data,
-            success: function() {
-                   alert("Ваше сообщение отпрвлено!");
-            });
-    });
-});    
-</script>
+$(function(){
+	$('#form').submit(function(e){
+		e.preventDefault();
+		$.ajax({
+			type: 'post',
+			url: 'php/form-processing.php',
+			data: $(this).serialize(),
+			success: function(data){
+				$('#result').html(data);
+			}    
+		});
+	});
+});

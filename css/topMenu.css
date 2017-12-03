@@ -24,10 +24,13 @@ ul li a{
   text-decoration: none;
   color: inherit;
 }
+ul li a:hover{
+    color: black;
+}
 ul li:last-child:after{
   content: "";
   position: absolute;
-  width: 150px; /*first item width*/
+  width: 170px; /*first item width*/
   border-bottom: 5px solid #f39c12;
   left: -470px; /*525-94 (total width - last item width*/
   -webkit-transition: all 0.5s ease;
@@ -36,7 +39,7 @@ ul li:last-child:after{
   transition: all 0.5s ease;
 }
 ul li:first-child:hover ~ li:last-child:after {
-  width: 150px;
+  width: 170px;
   left: -470px;
 }
 ul li:nth-child(2):hover ~ li:last-child:after {
