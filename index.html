@@ -2,256 +2,192 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Specaliance</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/mail.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-        <script src="js/scroll.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/topMenu.css">
+        <link rel="stylesheet" type="text/css" href="css/reviews.css">
+        <link rel="stylesheet" type="text/css" href="css/scroll.css">
+        <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="js/ancors.js"></script>
+        <script src="js/smoothScroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="js/fm.revealator.jquery.min.js"></script>
         <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <!-- /fonts -->
     </head>
-    <body>
-        <div class="header">
-            <center><div class="center hLabels">
-                <h1 class="display-4">Specaliance</h1>
-                <p class="lead">Бетон в Краснодаре</p>
-                <img src="img/logo.JPG">
-            </div></center>
-        </div>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapse_target">
-                
-                <a class="navbar-brand"><img src="img/logo.JPG"></a>
-                <ul class="navbar-nav mr-auto" id=#top-menu>
-                    <li class="nav-item hvr-underline-reveal">
-                        <a class="nav-link" href="#f01">Мы предлагаем</a>
-                    </li>
-                    <li class="nav-item hvr-underline-reveal">
-                        <a class="nav-link" href="#f02">Наши преимущества</a>
-                    </li>
-                    <li class="nav-item hvr-underline-reveal">
-                        <a class="nav-link" href="#f03">Расценки</a>
-                    </li>
-                    <li class="nav-item hvr-underline-reveal">
-                        <a class="nav-link" href="#f04">Контакты</a>
-                    </li>
-
-                        <a class="nav-link" href="#"><i class="fab fa-youtube fa-lg"></i></a>
-                        <a class="nav-link" href="#"><i class="fab fa-instagram fa-lg"></i></a>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <a href="tel:89184700505"><span class="navbar-text phone">
-                        <i class="fas fa-phone fa-lg"></i>
-                    <b> 8 (918) 470-05-05</b></span></a></ul>
+    <header>
+        <div class="container-fluid topMenu">
+            <div class="container">
+                <nav>
+                  <ul id="top-menu">
+                     <li><a href="#f01">Преимущества</a></li><!--
+                  --><li><a href="#f02">Мы предлагаем</a></li><!--
+                  --><li><a href="#f03">Наши бренды</a></li><!--
+                  --><li><a href="#f04">Контакты</a></li>
+                  </ul>
+                </nav>
             </div>
-        </nav>
-<!--offer-->
-        <div class="container-fluid offer" id="f01">
-            <div class="container offerContent">
-                <h1>Мы предлагаем</h1>
-                <p>Основными направлениями деятельности ООО "Спецальянс" являются:</p>
+        </div>
+    </header>
+    <body>
+        <div class="top container-fluid">
+               <div class="row">
+                 <div class="col-3"></div>
+                   <div class="col-6">
+                    <img class="logo" src="http://images.mirstroek.ru/images/users_logos/big/14686.jpeg">
+                   </div>
+                  <div class="col-3 phone">
+                      <a href="tel:+79181270040"><b>Тел. 8 (918) 127-00-40</b></a><br>
+                      <a href="mailto:specaliace@yandex.ru">specaliace@yandex.ru</a>
+                    <div class="button"><button class="btn btn-warning" data-toggle="modal" data-target="#triggerOrder">Заказать звонок</button></div>
+                   </div>
+               </div>
+                <h1 class="fontHeader">СПЕЦАЛЬЯНС</h1>
+            <p class="center fontHeader">Торговля и производство</p>
+            <p class="center fontLabel">Снабжение строительных и производственных объектов</p>
+            <!--scroll-->
+                <div class="scroll-downs">
+                  <div class="mousey">
+                    <div class="scroller"></div>
+                  </div>
+            <!--/scroll-->
+</div>
+        </div>
+        <div class="container-fluid advantages" id="f01">
+                <h2 class="revealator-slideright revealator-delay5">Наши преимущества</h2>
+            <div class="container">
                 <div class="row">
-                  <div class="col-12 col-sm-12 col-md-6 off1 offHov">
+                  <div class="col adv1 revealator-slideright revealator-delay1" id="adv1">
                       <div class="center">
-                          <p class="offLabel"><b>Производство и поставка бетонных смесей и растворов любых марок</b></p>
+                        <img class="icons" src="img/storageW.png">
+                          <p><b>Производство и склад в г.Краснодар</b></p>
                       </div>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-6 off2 offHov">
+                  <div class="col adv2 revealator-slideright revealator-delay2" id="adv2">
                     <div class="center">
-                        <p class="offLabel"><b>Изготовление железобетонных изделий</b></p>
+                        <img class="icons" src="img/carW.png">
+                        <p><b>Бесплатная доставка</b><br>
+                        при заказе от 10,000 руб.</p>
                     </div>
                   </div>
                   <div class="w-100"></div>
-                  <div class="col-12 col-sm-12 col-md-6 off3 offHov">
+                  <div class="col adv2 revealator-slideright revealator-delay3" id="adv3">
                           <div class="center">
-                              <p class="offLabel"><b>Оказание услуг спецтехники</b></p>
+                              <img class="icons" src="img/walletW.png">
+                              <p><b>Конкурентные цены</b></p>
                           </div>
                       </div>
-                  <div class="col-12 col-sm-12 col-md-6 off4 offHov">
+                  <div class="col adv1 revealator-slideright revealator-delay4" id="adv4">
                       <div class="center">
-                          <p class="offLabel"><b>Общестроительные работы.</b></p>
+                          <img class="icons" src="img/docW.png">
+                          <p><b>Комплексное закрытие заявок</b></p>
                       </div>
                   </div>
                 </div>
             </div>
-        </div>
-<!--/offer-->
-        <!--request-->
-        <div class="container-fluid request">
-            <div class="container">
+        </div>    
+        <div class="container-fluid offer">
+            <div class="container" id="f02">
+                <h2 class="revealator-slideright revealator-delay5">Мы предлагаем</h2>
                 <div class="row">
-                    <p class="center">Закажите у нас звонок и наши менеджеры в кратчайшие сроки свяжутся с Вами</p>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/electrodes.png"><div class="itemDesc"><h4>Электроды сварочные</h4><p>Наши электроды производятся на Магнитогорском металлургическом комбинате (ОАО «ММК - МЕТИЗ») который гарантирует высокое качество произведенной продукции.</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/fiber.png"><div class="itemDesc"><h4>Стекловолокно</h4><p>Широкий выбор стекловолокна, для разных целей применения. Мы являемся производителями стеклоровинга.</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/instrument.png"><div class="itemDesc"><h4>Ручной инструмент</h4><p>Широкий спектр различных ручных инструментов, от столярного до садового.</p></div></div>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-warning center" data-toggle="modal" data-target="#callRequest">Заказать звонок</button>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/nails.png"><div class="itemDesc"><h4>Гвозди строительные</h4><p>Для внутренних строительно-отделочных работ. Изготовлены в соответствии с ГОСТ 4028—63.</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/wire.png"><div class="itemDesc"><h4>Проволока вязальная</h4><p>Т/о, соответствует требованиям ГОСТ.</p></div></div>
+                    <div class="col item"><img class="img-fluid itemImg" src="img/discs.png"><div class="itemDesc"><h4>Диски отрезные</h4><p>Представлены брендами "Лужского образивного завода" и компании "Кратон"</p></div></div>
                 </div>
             </div>
         </div>
-<!--/request-->
-<!--advantages-->
-        <div class="container-fluid advantages" style="background-color:blanchedalmond" id="f02">
+        <div class="request container-fluid">
+            <div class="button center">
+                <button class="btn btn-warning" data-toggle="modal" data-target="#triggerOrder">Сделать заявку</button>
+            </div>
+        </div>
+        <div class="fiber container-fluid">
+            <h2 class="revealator-slideright revealator-delay5">Стекловолокно</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-10">
-                    <h1>Наши преимущества</h1>
-                    <p>Наша фирма ООО «СПЕЦАЛЬЯНС» располагает собственной производственной базой, оборудованной бетоносмесительной установкой СБ-145-3A.<br>Основными нашими преимуществами являются:</p>
-                        <ul>
-                            <li>выгодное географическое расположение (район «Немецкой деревни») <dfn data-info="Осуществим поставку продукции по кратчайшему пути, в любую точку г. Краснодара"><i class="fas fa-question-circle"></i></dfn></li>
-                            <li>система автоматического управления производственными процессами <dfn data-info="На базе тензометрических датчиков и контроллеров Direct Logic, обеспечивающая точность дозирования материалов до 1,0 кг"><i class="fas fa-question-circle"></i></dfn></li>
-                            <li>зимнее исполнение оборудования <dfn data-info="Позволяющее по своим технико-эксплуатационным характеристикам обеспечить устойчивое производство бетонных смесей и строительных растворов при температуре окружающего воздуха от -15°С до +45°С"><i class="fas fa-question-circle"></i></dfn></li>
-                            <li>автомобильные весы с пределом измерения 80 тн <dfn data-info="Обеспечивающие выходной контроль по объему отгружаемой продукции"><i class="fas fa-question-circle"></i></dfn></li>
-                            <li>наличие собственного парка автобетоносмесителей <dfn data-info="Позволяющее обеспечить бесперебойную круглосуточную поставку бетонных смесей и строительных растворов на Ваши объекты строительства"><i class="fas fa-question-circle"></i></dfn></li>
-                            <li>наличие собственного парка автобетононасосов с высотой подачи от 25 до 58 метров <dfn data-info="Для обеспечения подачи бетонных смесей непосредственно в конструкции"><i class="fas fa-question-circle"></i></dfn></li>
-                            <li>собственная ремонтная база, оборудованная боксами для оперативного технического обслуживания, текущих и капитальных ремонтов строительной техники;</li>
-                            <li>высококвалифицированный персонал с огромным опытом работы в этой области;</li>
-                        </ul>
+                    <div class="col-4"><img class="img-fluid" src="img/fiber-glass-400.png"></div>
+                    <div class="col-8">
+                        <div class="fiberTextBox">
+                            <p>Так же, у нас вы можете приобрести высокосачественные материалы для работы со стеклопластиковой продукцией:</p>
+                            <li>Стекломат</li>
+                            <li>Стеклоткань</li>
+                            <li>Стеклоровинг для намотки</li>
+                            <li>Стеклоровинг для напыления</li>
+                            <li>Полиэфирная смола</li>
+                            Стекловолокно мы производим сами и можем гарантировать качество нашей продукции.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-<!--/advantages-->
-<!--prices-->
-        <div class="container-fluid priceBlock" id="f03">
-            <div class="container priceTable" style="overflow: auto;">
-            <h1>Расценки на оказание услуг автобетононасоса</h1>
-                <table style="width: 100%; text-align: center;" border="1">
-                    <tbody>
-                        <tr>
-                            <td rowspan="2">Длина стрелы бетононасоса</td>
-                            <td colspan="3">Стоимость услуг бетононасоса</td>
-                        </tr>
-                        <tr>
-                            <td><b>минимальная стоимость</b> выезда</td>
-                            <td><b>при объеме более указанного в пункте "минимальная стоимость"</b>, за каждый м3 перекачанного бетона, к минимальной стоимости выезда автобетононасоса прибавляется, руб/м3</td>
-                            <td><b>при времени работы автобетононасоса более 2-х часов в темпе перекачивания менее 10 м3/час</b>, за каждый час работы автобетононасоса к минимальной стоимости выезда прибавляется, руб/час</td>
-                        </tr>
-                        <tr>
-                            <td>25 м</td>
-                            <td>6000 руб. (2 часа) 24 м3</td>
-                            <td>250 =</td>
-                            <td>2500 =</td>
-                        </tr>
-                        <tr>
-                            <td>36 м</td>
-                            <td>8000 руб. (2 часа) 24 м3</td>
-                            <td>250 =</td>
-                            <td>2500 =</td>
-                        </tr>
-                        <tr>
-                            <td>40-42 м</td>
-                            <td>9000 руб. (2 часа) 24 м3</td>
-                            <td>250 =</td>
-                            <td>2500 =</td>
-                        </tr>
-                        <tr>
-                            <td>52-58 м</td>
-                            <td>15000 руб. (2 часа) 24 м3</td>
-                            <td>350 =</td>
-                            <td>3500 =</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Переезд на объекте, 1000 руб.</td>
-                            <td>При темпе перекачивания менее 10 м3/час <b>автоматически</b> применяется <b>повременная</b> система расчётов</td>
-                            <td>Минимальная смена - 3 часа. Кроме 25 метров. Время технологической промывки (45 минут) входит в оплачиваемое время</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="3">Дополнительный бетоноводный тракт оплачивается отдельно<br>250 руб. за каждый метр удлинения</td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">При выполнении работ на объектах, расположенных за пределами г.Краснодара, дополнительно применяется расцена за доставку автобетононасоса - 100 руб/км (по удалённости объекта от границы города Краснодара)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            <br>
-            <div class="row">
-               <a href="doc/priceList.xlsx" class="center"><button type="button" class="btn btn-primary" >Скачать прайс в формате xls (MS Excel)</button></a>
-                </div></div>
-        </div>
-<!--/prices-->
-        <!--services-->
-        <div class="container services">
-            <h1>Наши услуги</h1>
-            <p>Для решения Ваших задач, предлагаем Вам следующие услуги:</p>
-            <ul>
-                <li>круглосуточная поставка товарного бетона и раствора любых марок;</li>
-                <li>перевозка бетона (раствора) автобетоносмесителями с объемом смесительного барабана до 12 куб.м;</li>
-                <li>подача бетона (раствора) автобетононасосами с длиной стрелы до 42м – 250 руб/куб.м.;</li>
-                <li>подача бетона (раствора) автобетононасосами с длиной стрелы до58м – 300 руб/куб.м.;</li>
-                <li>подача бетона (раствора) автобетононасосами с длиной стрелы 58м – 350 руб/куб.м.;</li>
-                <li>аренда стационарных распределительных стрел от 150 000 руб/месяц;</li>
-                <li>аренда стационарного бетононасоса от 300 000 руб/месяц.</li>
-            </ul>
-        </div>
-<!--/services-->
-<!--request-->
-        <div class="container-fluid request">
-            <div class="container">
+        <div class="clients container-fluid" id="f03">
+            <h2 class="revealator-slideright revealator-delay5">Наши бренды</h2>
+            <div class="clientsBlock container">
                 <div class="row">
-                    <p class="center">Закажите у нас звонок и наши менеджеры в кратчайшие сроки свяжутся с Вами</p>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor1" src="img/logo1w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor2" src="img/logo2w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor1" src="img/logo3w.png"></div>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-warning center" data-toggle="modal" data-target="#callRequest">Заказать звонок</button>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor2" src="img/logo4w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor1" src="img/logo5w.png"></div>
+                    <div class="img-fluid"><img class="brandLogo brandLogoColor2" src="img/logo6w.png"></div>
                 </div>
             </div>
         </div>
-<!--/request-->
-<!--friends-->
-        <div class="container clients">
-            <h1>Наши клиенты</h1>
-            <p>Общество с ограниченной ответственностью "Спецальянс" работает на строительном рынке Краснодарского края с 2000 г.<br>Среди наших заказчиков такие организации, как ЗАО «Таманьнефтегаз», ООО НПФ «Металлимпресс», ООО «Девелопмент-Юг» и др. За годы работы наша компания приняла участие в строительстве и реконструкции большого количества объектов на территории Краснодарского края и за его пределами. В их числе промышленные объекты: Туапсинский, Афипский, Краснодарский нефтеперерабатывающие заводы, Абинский электрометаллургический завод, консервныйперерабатывающий завод «Бондюэль-Кубань», торговые и развлекательные комплексы «Мега Адыгея», «СБС», «OZ», «Галерея», «Лента», завод ”KLAAS” а также большое число жилых и общественно-деловых комплексов.</p>
+        <div class="request container-fluid">
+            <div class="button center">
+                <button class="btn btn-warning" data-toggle="modal" data-target="#triggerOrder">Сделать заявку</button>
+            </div>
         </div>
-<!--/friends-->
-<!--contacts-->
-        <div class="container-fluid contacts" id="f04">
-            <div class="container">
-                <div class="row">
-                    <div class=".col-6 .col-md-12">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A046b363a742e5eac132f31aad2487bde8277d8376a2a89eee03ee38d1c036592&amp;source=constructor" width="100%" height="320" frameborder="0"></iframe>
+        <div class="contacts container-fluid" id="f04">
+               <div class="container">
+                    <h2 class="revealator-slideright revealator-delay1">Контакты</h2>
+                    <p>г.Краснодар, пос.Колосистый, пер.Звёздный, 1/1 <br>
+                    <a class="grey" href="tel:+79181270040">Тел. 8 (918) 127-00-40</a><br>
+                    <a class="grey" href="mailto:specaliace@yandex.ru">specaliace@yandex.ru</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.1127991456515!2d38.90601107975123!3d45.1265914484607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f0470a913ac61f%3A0x7461f5af854b9b06!2z0L_QtdGALiDQl9Cy0LXQt9C00L3Ri9C5LCAxLCDQmtC-0LvQvtGB0LjRgdGC0YvQuSwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1MDA1Mw!5e0!3m2!1sru!2sru!4v1511088198384" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p>Дизайн и разработка - <a class="grey" href="https://vk.com/soapheart">Soapheart</a>, 2017</p>
+                </div>
+        </div>
+    </body>
+    <footer>
+        <div class="modal fade" id="triggerOrder" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="myModalLabel">Заказать звонок</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+                <form action="" method="post" id="form">
+                  <div class="center modal-body">
+                    <p>Пожалуйста заполните поля ниже, чтобы мы могли связатсья с Вами</p>
+                    <input type="text" name="name" placeholder="Ваше имя" required="required" /><br/>
+                    <input  type="email" name="email" placeholder="Email" required="required" /><br/>
+                    <input type="phone" name="phone" placeholder="Телефон" /><br/>
+                    <textarea type="text" name="message" placeholder="Комментарий"></textarea><br/>
+                  </div>
+                  <div class="modal-footer">
+                      <input type="submit" class="btn btn-primary center">
                     </div>
-                    <div class=".col-6 .col-md-12
- contactsLables">
-                        <h1>Контакты</h1>
-                        Адрес:<br>г.Краснодар, пер.Звёздный, 1/1<br><br>Тел.: 8 (918) 470-05-05<br>Тел.: 8 (918) 356-48-49<br><br>
-                        <a href="mailto:zakaz.nasos@mail.ru">zakaz.nasos@mail.ru</a>
-                </div>
+                </form>
+              </div>
             </div>
-            <div class="row"></div>
-                <span>Дизайн и разработка - <a href="https://vk.com/soapheart">Soapheart</a>, 2018</span>
-            </div>
-        </div>
-<!--/contacts-->
-<!--modal-->
-<div class="modal fade" id="callRequest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Заказать звонок</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Пожалуйста заполните поля ниже, чтобы мы могли связаться с Вами</p>
-        <input type="text" name="name" placeholder="Ваше имя" required="required" /><br/>
-        <input type="phone" name="phone" placeholder="Телефон" required="required"/><br/>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-primary">Заказать звонок</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!--/modal-->
-</body>
+          </div>
+    </footer>
